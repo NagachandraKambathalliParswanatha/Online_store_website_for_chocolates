@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+kambathalli parswanatha, Nagachandra
+Jadran Id: Jadrn023
+Project #4
+Fall 2017
+-->
+<head>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>Bertha's Chocolates </title>
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../Styles/MyStyle.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/product.css">
+ <!--   <link rel="stylesheet" type="text/css" href="orderonline.css">-->
+    <script src="../JavascriptFiles/jquery.js"></script>
+    <!-- <script type="text/javascript" src="../JavascriptFiles/cart-transactions.js" ></script> -->
+    <!-- <script type="text/javascript" src="../JavascriptFiles/shopping_cart.js" ></script> -->
+    <script type="text/javascript" src="../JavascriptFiles/ajax_get_lib.js" ></script>
+    <script type="text/javascript" src="../JavascriptFiles/ajax_populate_page.js" ></script>
+    <script type="text/javascript" src="../JavascriptFiles/order_form_validation.js" ></script>
+</head>
+<body>
+
+    <div class="wrapperHeader">
+        <h1 class = "Heading">Bertha's Deluxe<span class="color"> Chocolates</span>.</h1>
+        <div id="items">
+            <a id="a-bag" href="#">
+                <img class="cart"
+                     src="../images/cartt.png"/>
+                <h5 class="h3_bag"><span id="count">0</span></h5>
+            </a>
+        </div>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="../index.html">Home</a>
+        <a href="../HtmlPages/Products.html">Products</a>
+        <a href="../HtmlPages/orderonline.html" >OrderOnline</a>
+        <a href="../HtmlPages/AboutUS.html">About US</a>
+        <a href="../HtmlPages/Contact.html">Contact</a>
+    </div>
+    <!-- <div id="cart-inline"></div> -->
+    <div id="orderform">
+        <form name="order" id="form" method="post" action="/perl/jadrn023/OrderConfirmation.cgi" enctype="multipart/form-data">
+            <div id="hiddendiv">
+                <input type="hidden" name="SKUNumber"/>
+                <input type="hidden" name="Quantity"/>
+            </div>
+
+            <ul>
+                <h4>Shipping Address</h4>
+
+                <li><label for="firstname">First Name:</label>
+                    <input type="text" name="fname" id="firstname" size = "25"/></li>
+
+                <li>	<label for = "lastname">Last Name:</label>
+                    <input type="text" name="lname" id="lastname" size = "25"/></li>
+
+                <li>	<label for="address1">Address 1:</label>
+                    <input type="text" name="address1" id="address1" size = "55"></li>
+
+                <li>	<label for="addresstwo">Address 2:</label>
+                    <input type="text" name="address2" id="addresstwo" size = "55"></li>
+
+                <li>	<label for="city">City</label>
+                    <input type="text" name="city" id="city" size="15">
+
+                    <label for="state">State</label>
+                    <input type="text" name="state" id="state" maxlength="2" size="5" >
+
+                    <label for="zip">Zip</label>
+                    <input type="text" pattern="[0-9]{5}" name="zip" id="zip" maxlength="5" size="10" ></li>
+
+                <li><label id = "fone">Primary Phone</label> (
+                    <input class="phone" type="tel" name="areacode" maxlength="3" size = "4" >)
+                    <input class="phone" type="tel" name="phoneprefix" maxlength="3" size = "4" > -
+                    <input class="phone" type="tel" name="phoneno" maxlength="4" size = "5" ></li>
+
+
+                <li><label for="email">Email</label>
+                    <input type="email" name="email" id="email" size="45" placeholder="optional"></li>
+            </ul>
+            <ul>
+                <h4 class="orders-heading">Payment Information</h4>
+
+
+
+                <li><label>Name on Card:</label>
+                    <input type="text" name="fname2" size="30"/>
+                </li>
+
+                <li><label>Payment Type:</label>
+                    <input type="radio" name="CardType" value="Visa" checked="checked"/>Visa
+                    <input type="radio" name="CardType" value="Mastercard"/>Mastercard
+                    <input type="radio" name="CardType" value="Discover"/>Discover
+                    <input type="radio" name="CardType" value="American Express"/>American Express
+                </li>
+
+                <li>
+                    <label>Card Number:</label>
+                    <input type="text" name="cardno" size="30" maxlength="16"/>
+                </li>
+                <li>
+                    <label>Expiration Date:</label>
+
+                    <input type="text" name="month" size="2" maxlength="2" />/
+                    <input type="text" name="year" maxlength="4" size="4" />
+                    <label class="label1">CVV:</label>
+                    <input type="text" name="cvv" maxlength="3" size="3"/>
+                </li>
+
+
+
+            </ul>
+            <ul>
+                <input name="AddressCheckBox" type="checkbox" value="selected"/>
+                Check if your Billing Address is same as Shipping Address
+            </ul>
+
+            <ul>
+                <h4>Billing Address</h4>
+
+                <li>	<label for="address11">Address :</label>
+                    <input type="text" name="address11" id="address11" size = "55"></li>
+                <li>	<label for="address2">Address 2:</label>
+                    <input type="text" name="address2" id="address2" size = "55"></li>
+
+                <li>	<label for="city1">City</label>
+                    <input type="text" name="city1" id="city1" size="15">
+
+                    <label for="state1">State</label>
+                    <input type="text1" name="state1" id="state1" maxlength="2" size="5" >
+
+                    <label for="zip1">Zip</label>
+                    <input type="text" pattern="[0-9]{5}" name="zip1" id="zip1" maxlength="5" size="10" ></li>
+<!--
+                <li><label id = "fone1">Primary Phone</label> (
+                    <input class="phone" type="tel" name="areacode1" maxlength="3" size = "4" >)
+                    <input class="phone" type="tel" name="phoneprefix1" maxlength="3" size = "4" > -
+                    <input class="phone" type="tel" name="phoneno1" maxlength="4" size = "5" ></li>-->
+            </ul>
+            <div id = "DispMes"> </div>
+            <input type="reset" class="resetbutton"/>
+            <input type="submit" value="Submit" name="submitbutton" id="confirm"/>
+
+
+        </form>
+    </div>
+</body>
+</html>

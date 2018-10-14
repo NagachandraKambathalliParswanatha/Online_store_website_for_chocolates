@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<!--
+kambathalli parswanatha, Nagachandra
+Jadran Id: Jadrn023
+Project #4
+Fall 2017
+-->
+<head>
+<head>
+    <meta http-equiv="content-type"
+          content="text/html;charset=utf-8" />
+    <title>Bertha's Chocolates </title>
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../Styles/MyStyle.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/product.css">
+    <script src="http://jadran.sdsu.edu/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../JavascriptFiles/shopping_cart.js" ></script>
+    <script type="text/javascript" src="../JavascriptFiles/ajax_get_lib.js" ></script>
+    <script type="text/javascript" src="../JavascriptFiles/ajax_populate_page.js" ></script>
+</head>
+<body>
+<div class="wrapperHeader">
+    <h1 class = "Heading">Bertha's Deluxe<span class="color"> Chocolates</span>.</h1>
+    <div id="items">
+        <a id="a-bag" href="#">
+            <img class="cart"
+                 src="../images/cartt.png"/>
+            <h5 class="h3_bag"><span id="count">0</span></h5>
+        </a>
+    </div>
+</div>
+
+<div class="topnav" id="myTopnav">
+    <a href="../index.html">Home</a>
+    <a href="../HtmlPages/Products.html">Products</a>
+    <a href="../HtmlPages/orderonline.html" >OrderOnline</a>
+    <a href="../HtmlPages/AboutUS.html">About US</a>
+    <a href="../HtmlPages/Contact.html">Contact</a>
+</div>
+<div id ="chocolatesdiv">
+
+    <div id="navigationn">
+         <ul class="toggle-content" style="display: block;">
+                <!--<p>Pick your favorate Category of chocolates</p>-->
+                <li class="checkbox" id="milk">
+                    <a title="Product" id="milkchocolate" href="#">
+                        Milk Chocolate
+                    </a>
+                </li>
+                <li class="checkbox" id="dark">
+                    <a title="Product" id="darkchocolate" href="#">
+                        Dark Chocolate
+                    </a>
+                </li>
+
+            <li class="checkbox" id="chews">
+                <a title="Product" id="nuts" href="#">
+                    Nuts &amp; Chews
+                </a>
+            </li>
+
+            <li class="checkbox" id="toffies">
+                <a title="Product" id="brittles" href="#">
+                    Brittles &amp; Toffies
+                </a>
+            </li>
+
+            <li class="checkbox" id="truff">
+                <a title="Product" id="truffles" href="#">
+                    Truffles
+                </a>
+            </li>
+
+            <li class="checkbox" id="gift">
+                <a title="Product" id="gifts" href="#">
+
+                     Gifts
+                </a>
+            </li>
+
+            <li class="checkbox" id="hol">
+                <a title="Product" id="holiday" href="#">
+                    Holiday Assortments
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div id="content" class="clear inline">
+    </div>
+</div>
+</body>
+</html>

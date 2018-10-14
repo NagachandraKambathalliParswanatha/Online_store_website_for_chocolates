@@ -1,0 +1,82 @@
+
+#orderform
+{
+    margin:100px;
+    padding:80px;
+    border: 2px solid black;
+}
+#DispMes
+{
+    height:30px;
+    background-color: #FFFAF0;
+    text-align: center;
+    font-size:20px;
+    font-weight: bold;
+    font-color:black;
+}
+#cart-inline
+{
+    margin:40px;
+    padding:20px;
+
+}
+.displaycart th
+{
+    width:200px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left:12px;
+    padding-right:12px;
+    margin:10px;
+    text-align: center;
+    background-color: #87cefa;
+    color: white;
+}
+
+.displaycart td {
+
+    padding: 12px;
+    width:200px;
+    text-align: center;
+
+}
+
+#c_checkout
+{
+    float:right;
+    font-size:15px;
+    margin-top: 80px;
+    margin-right: 180px;
+    margin-left:200px;
+
+}
+#c_shop
+{
+    float:left;
+    margin-top: 80px;
+    margin-right: 180px;
+    margin-left:200px;
+    font-size:15px;
+
+}
+#confirm
+{
+    float:right;
+    font-size:15px;
+    margin-top: 20px;
+    margin-right: 80px;
+    margin-left:180px;
+
+    width:200px;
+}
+.resetbutton
+{
+    float:left;
+    margin-top: 20px;
+    margin-right: 80px;
+    margin-left:180px;
+    font-size:15px;
+
+    width:200px;
+}
+
