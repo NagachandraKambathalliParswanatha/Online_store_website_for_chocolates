@@ -1,11 +1,11 @@
 # Online_store_website_for_chocolates
-An online candies store which features products from a fictional company, Bertha's Deluxe Chocolates. The Application also includes an online payment system.
+An online store website that features products from a fictional company, Bertha's Deluxe Chocolates. The company produces fine chocolates and confections for sale over the Internet.
 
 ## Contributors
 Nagachandra Kambathalli Parswanatha
 
 ## Synopsis
-An online candies store which features products from a fictional company, Bertha's Deluxe Chocolates. The Application also includes an online payment system.
+An online store website that features products from a fictional company, Bertha's Deluxe Chocolates. The company produces fine chocolates and confections for sale over the Internet. The online store front for the company allows customers to browse the various product offereings and purchase products online.
 
 ## Work flow
 * The main page is the introductory page which contains a link to all the candies and different categories where the user is allowed to browse trought the items without logging in.
